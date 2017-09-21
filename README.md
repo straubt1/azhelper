@@ -62,22 +62,22 @@ Example:
 Restart all VM's in a set of one-to-many Resource Groups
 
 Example:
-`vms- groupname1 groupname2`
+`vms-restart groupname1 groupname2`
 
 ### vms-start
 Start all VM's in a set of one-to-many Resource Groups
 
 Example:
-`vms- groupname1 groupname2`
+`vms-start groupname1 groupname2`
 
 ### vms-stop
 Stop all VM's in a set of one-to-many Resource Groups
 
 Example:
-`vms- groupname1 groupname2`
+`vms-stop groupname1 groupname2`
 
 ### vms-deallocate
 Deallocate all VM's in a set of one-to-many Resource Groups
 
 Example:
-`vms- groupname1 groupname2`
+`vms-deallocate groupname1 groupname2`
