@@ -13,6 +13,12 @@ function vms-start () {
 
 function vms-stop () {
     rgs=$@
+    for rg in $rgs; do setvmstate "$rg" stop & done
+    wait
+}
+
+function vms-deallocate () {
+    rgs=$@
     for rg in $rgs; do setvmstate "$rg" deallocate & done
     wait
 }
@@ -31,10 +37,4 @@ function vms-show () {
     rgs=$@
     for rg in $rgs; do getvmdetails "$rg" & done
     wait
-}
-
-function vms-show-ids () {
-    read ids; 
-    echo $ids;
-    az vm show --ids $ids --show-details
 }
