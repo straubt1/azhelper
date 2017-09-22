@@ -33,6 +33,7 @@ getvmdetails () {
  r=$1
  az vm list -g $r -o table --show-details
 }
+
 function vms-show () {
     rgs=$@
     for rg in $rgs; do getvmdetails "$rg" & done

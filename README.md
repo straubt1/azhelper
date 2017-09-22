@@ -81,3 +81,25 @@ Deallocate all VM's in a set of one-to-many Resource Groups
 
 Example:
 `vms-deallocate groupname1 groupname2`
+
+## Search
+### search-group
+Search all resource groups in a subscription which have a name that contains the given string
+
+`search-group test`
+
+### search-vms
+Search all virtual machines in a subscription which have a name that contains the given string
+
+`search-vms test`
+
+### search-vms-details
+Search all virtual machines in a subscription which have a name that contains the given string, but also return the running state
+
+`search-vms-details test`
+
+## search-vm-from-ip
+Given an IP address, get the associated VM name
+
+Example:
+`search-vm-from-ip 1.1.1.1`
