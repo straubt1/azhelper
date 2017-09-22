@@ -1,5 +1,5 @@
-[![](https://images.microbadger.com/badges/version/straubt1/azhelper.svg)](https://microbadger.com/images/straubt1/azhelper "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/straubt1/azhelper.svg)](https://microbadger.com/images/straubt1/azhelper "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/straubt1/azhelper.svg)](https://microbadger.com/images/straubt1/azhelper "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/straubt1/azhelper.svg)](https://microbadger.com/images/straubt1/azhelper "Get your own image badge on microbadger.com")[![](https://dockerbuildbadges.quelltext.eu/status.svg?organization=straubt1&repository=azhelper)](https://dockerbuildbadges.quelltext.eu/status.svg?organization=straubt1&repository=azhelper "Dockerhub Build Status")
+
 
 # azhelper
 Docker image to be used to interact with Microsoft's Azure Cloud.
