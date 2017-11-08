@@ -8,5 +8,5 @@ for f in /scripts/*; \
 do chmod a+x \$f; source \$f; \
 done;" > ~/.bashrc
 
-RUN shopt -s extglob
+RUN ["/bin/bash", "-c", "shopt -s extglob"]
 CMD bash
