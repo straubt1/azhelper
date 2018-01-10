@@ -16,7 +16,7 @@ This directory stores your az cli configs and access tokens so you do not need t
 `docker run -it -v ${HOME}/.azure:/root/.azure straubt1/azhelper`
 
 ### Run on Windows
-`docker run -it -v /${HOME}/.azure:/root/.azure straubt1/azhelper`
+`docker run -it -v %HOME%/.azure:/root/.azure straubt1/azhelper`
 *note:* windows needs slightly different syntax to map a windows path to a linux one.
 
 Once you are up and running with the container you need to login with the `az login` command.
