@@ -32,11 +32,11 @@ function get-accounts {
 	IFS=$OIFS;
 	# OFS=$OOFS;
 
-	echo -n "Switch? "
+	echo ""
+	echo -n "Select Subscription: "
 	read account_index
 
-	if [ -n "$account_index" ]; then set-account $account_index; fi
-	
+	if [ -n "$account_index" ]; then set-account $account_index; fi	
 }
 
 function set-account {
