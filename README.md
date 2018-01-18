@@ -13,10 +13,10 @@ This directory stores your az cli configs and access tokens so you do not need t
 `mkdir ${HOME}/.azure`
 
 ### Run on Mac/Linux
-`docker run -it -v ${HOME}/.azure:/root/.azure straubt1/azhelper`
+`docker run --rm -it -v ${HOME}/.azure:/root/.azure straubt1/azhelper`
 
 ### Run on Windows
-`docker run -it -v %HOME%/.azure:/root/.azure straubt1/azhelper`
+`docker run --rm -it -v %HOME%/.azure:/root/.azure straubt1/azhelper`
 *note:* windows needs slightly different syntax to map a windows path to a linux one.
 
 Once you are up and running with the container you need to login with the `az login` command.
@@ -53,6 +53,29 @@ Subscription Name                AzureCloud   zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 
 # Helper Functions
 The following details the functions available that can be real time savers.
+
+## Account Switching
+
+### get-accounts
+Allows you to list all the subscriptions you have access to and prompts for a subscription to switch to.
+
+Example:
+`get-accounts`
+
+## Network
+### get-ips
+Gets all the IP's in the subscription, or in a Resource Group if specified.
+
+Examples:
+`get-ips`
+`get-ips groupname1`
+
+### get-ips-detailed
+Gets all the IP's in the subscription as well as any load balancers, or in a Resource Group if specified.
+
+Examples:
+`get-ips-details`
+`get-ips-details groupname1`
 
 ## VM State
 ### vm-show
@@ -101,7 +124,7 @@ Search all virtual machines in a subscription which have a name that contains th
 
 `search-vms-details test`
 
-## search-vm-from-ip
+### search-vm-from-ip
 Given an IP address, get the associated VM name
 
 Example:
