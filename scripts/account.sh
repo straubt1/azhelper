@@ -44,7 +44,7 @@ function set-account {
 	OIFS=$IFS;
 	IFS='
 '
-	account=`az account list -o tsv --query "[${index}].id" --all`
+	account=`az account list -o tsv --query "sort_by(@,&name)[${index}].id" --all`
 	accountsArray=$accounts;
 
 	az account set -s ${account}
